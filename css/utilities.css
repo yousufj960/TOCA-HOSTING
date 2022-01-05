@@ -1,0 +1,469 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+/* Common CSS   */
+:root{
+  
+  /* --primary-color:#2489b8; */
+  /* --primary-color:#228d8d; */
+    --primary-color:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f6fbff;
+    --success-color:#5cb85c;
+    --error-color:#ec2314;
+}
+*{
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+
+body
+{
+  font-family: 'Lato', sans-serif;
+
+}
+
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration:none;
+    color:#333;
+  }
+  h1
+  {
+    font-weight: 300;
+    line-height:1.2;
+    margin:10px 0;
+  }
+  h2
+  {
+    font-weight: 300;
+    line-height:1.2;
+    margin:10px 0;
+  }
+  
+  img{
+   width:100%;
+  }
+  
+  
+  .container
+  {
+   
+    max-width: 1100px;
+    margin:0 auto;
+    overflow: auto;
+    padding:0 40px;
+  }
+
+  /* Animation CSS  */
+     @-webkit-keyframes slideFromLeft
+    {
+          0%{
+            -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+          }
+          100%{
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+          }
+     }
+     @keyframes slideFromLeft
+    {
+          0%{
+            -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+          }
+          100%{
+            -webkit-transform: translateX(0);
+                    transform: translateX(0);
+          }
+     }
+
+     @-webkit-keyframes slideFromRight
+     {
+           0%{
+             -webkit-transform: translateX(100%);
+                     transform: translateX(100%);
+           }
+           100%{
+             -webkit-transform: translateX(0);
+                     transform: translateX(0);
+           }
+      }
+
+     @keyframes slideFromRight
+     {
+           0%{
+             -webkit-transform: translateX(100%);
+                     transform: translateX(100%);
+           }
+           100%{
+             -webkit-transform: translateX(0);
+                     transform: translateX(0);
+           }
+      }
+
+
+      @-webkit-keyframes slideFromTop
+      {
+            0%{
+              -webkit-transform: translateY(-100%);
+                      transform: translateY(-100%);
+            }
+            100%{
+              -webkit-transform: translateY(0);
+                      transform: translateY(0);
+            }
+       }
+
+
+      @keyframes slideFromTop
+      {
+            0%{
+              -webkit-transform: translateY(-100%);
+                      transform: translateY(-100%);
+            }
+            100%{
+              -webkit-transform: translateY(0);
+                      transform: translateY(0);
+            }
+       }
+       @-webkit-keyframes slideFromBottom
+       {
+             0%{
+               -webkit-transform: translateY(100%);
+                       transform: translateY(100%);
+             }
+             100%{
+               -webkit-transform: translateY(0);
+                       transform: translateY(0);
+             }
+        }
+       @keyframes slideFromBottom
+       {
+             0%{
+               -webkit-transform: translateY(100%);
+                       transform: translateY(100%);
+             }
+             100%{
+               -webkit-transform: translateY(0);
+                       transform: translateY(0);
+             }
+        }
+  /* alert class  */
+
+  .alert
+  {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight:bold;
+    margin:15px 0;
+    font-size:12px;
+    
+  }
+
+  .alert i 
+  {
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+
+  .alert-success
+  {
+    background-color:var(--success-color);
+    color: white;
+  }
+  /* flex and grid  */
+  .flex 
+  {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    height:100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .grid 
+  {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:(1fr)[2];
+    grid-template-columns:repeat(2,1fr);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+  }
+  .grid-3
+  {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:(1fr)[3];
+    grid-template-columns:repeat(3,1fr);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card
+  {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding:20px;
+    margin:10px;
+  }
+
+  code,pre
+  {
+    background:#333;
+    color:#fff;
+    padding:30px 20px;
+    
+  }
+  /* Button - Text -color */
+  .btn
+  {
+    display:inline-block;
+    padding: 10px 30px;
+    cursor:pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border:none;
+    border-radius:5px;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    border:1px solid #fff;
+  }
+  
+  .btn:hover
+  {
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  .bg-primary  a, 
+  .btn-primary a,
+  .bg-secondary a, 
+.btn-secondary a,
+.bg-primary a, 
+.bg-dark a, 
+.btn-dark a,
+.bg-light a
+.btn-light {
+   color: #fff;
+}
+
+.bg-primary,
+.btn-primary{
+  background-color: var(--primary-color);
+  color: #fff;    
+}
+
+.bg-secondary , 
+.btn-secondary{
+  background-color: var(--secondary-color);
+  color: #fff;    
+}
+.bg-dark, 
+.btn-dark{
+  background-color: var(--dark-color);
+  color: #fff;    
+}
+
+.bg-light , 
+.btn-light{
+  background-color: var(--light-color);
+  color: #333;    
+}
+  /* Text  */
+.lead{
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;  
+}
+.lg {
+  font-size:3rem;
+}
+
+.xl{
+  font-size:4rem;
+}
+  .text-center
+  {
+      text-align: center;
+
+  }
+  .text-primary {
+    color:var(--primary-color);
+  }
+
+  .text-secondary 
+  {
+    color:var(--secondary-color);
+  }
+
+
+.text-dark{
+  color: var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+/* Margin CSS Y */
+  .my-1
+  {    
+         /* 1 rem =16px */
+          margin:1rem 0;     
+  }
+
+  .my-2
+  {    
+         /* 1 rem =16px */
+          margin: 1.5rem 0;     
+  }
+
+  
+  .my-3
+  {    
+         /* 1 rem =16px */
+          margin: 2rem 0;     
+  }
+
+  .my-4
+  {    
+         /* 1 rem =16px */
+          margin: 3rem 0;     
+  }
+  .my-5
+  {    
+         /* 1 rem =16px */
+          margin: 4rem 0;     
+  }
+
+/* Margin CSS  Y*/
+  .m-1
+  {    
+         /* 1 rem =16px */
+          margin:1rem;     
+  }
+
+  .m-2
+  {    
+         /* 1 rem =16px */
+          margin:1.5rem;     
+  }
+
+  
+  .m-3
+  {    
+         /* 1 rem =16px */
+          margin: 2rem;     
+  }
+
+  .m-4
+  {    
+         /* 1 rem =16px */
+          margin: 3rem;     
+  }
+  .m-5
+  {    
+         /* 1 rem =16px */
+          margin: 4rem;     
+  }
+
+
+  /* Padding CSS Y */
+  .py-1
+  {    
+         /* 1 rem =16px */
+          padding:1rem 0;     
+  }
+
+  .py-2
+  {    
+         /* 1 rem =16px */
+          padding:1.5rem 0;     
+  }
+
+  
+  .py-3
+  {    
+         /* 1 rem =16px */
+          padding: 2rem 0;     
+  }
+
+  .py-4
+  {    
+         /* 1 rem =16px */
+          padding: 3rem 0;     
+  }
+  .py-5
+  {    
+         /* 1 rem =16px */
+        padding: 4rem 0;     
+  }
+
+   /* Padding CSS ALL*/
+   .p-1
+   {    
+          /* 1 rem =16px */
+           padding:1rem;     
+   }
+ 
+   .p-2
+   {    
+          /* 1 rem =16px */
+           padding:1.5rem;     
+   }
+ 
+   
+   .p-3
+   {    
+          /* 1 rem =16px */
+           padding: 2rem;     
+   }
+ 
+   .p-4
+   {    
+          /* 1 rem =16px */
+           padding: 3rem;     
+   }
+   .p-5
+   {    
+          /* 1 rem =16px */
+         padding: 4rem;     
+   }
